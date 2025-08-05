@@ -1,0 +1,125 @@
+/* doctor.css */
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f9fc;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container for doctor profile or form */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #1e5f8a;
+  margin-bottom: 15px;
+}
+
+/* Doctor profile section */
+.doctor-profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.doctor-profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1e5f8a;
+}
+
+.doctor-info {
+  flex-grow: 1;
+}
+
+.doctor-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Appointment form styles */
+form.doctor-appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-weight: 600;
+  color: #1e5f8a;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #1e5f8a;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form input[type="time"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #37a6f6;
+  outline: none;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  background-color: #1e5f8a;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #144a67;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .doctor-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-profile img {
+    margin-bottom: 20px;
+  }
+}

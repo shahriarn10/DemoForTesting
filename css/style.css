@@ -1,0 +1,77 @@
+/* Apply global styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form box */
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(35, 203, 167, 0.3);
+    width: 350px;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #23cba7;
+    margin: auto;
+    
+}
+
+.log_heading, .reg_heading {
+    margin-bottom: 20px;
+}
+
+input{
+    width:91%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #23cba7;
+    border-radius: 6px;
+    font-size: 16px;
+}
+/* Input fields */
+ select {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #23cba7;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #23cba7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor:pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1cb396;
+}
+
+/* Links */
+a {
+    color: #23cba7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
