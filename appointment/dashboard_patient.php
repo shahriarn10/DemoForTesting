@@ -104,8 +104,6 @@
   <p>A one-stop solution for your health.</p>
 </header>
 
-
-
 <div class="dashboard">
   <div class="feature" onclick="window.location.href='../appointment/book.php'">
     <img src="../images/appointment-icon.png" alt="Appointment">

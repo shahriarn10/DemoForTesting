@@ -14,9 +14,7 @@ session_start();
 </nav>
 
 <?php
-session_start();
-$conn = new mysqli("localhost", "root", "", "healthcare_db");
-if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
+include '../includes/db.php';
 
 if (!isset($_SESSION['cart'])) $_SESSION['cart'] = [];
 
